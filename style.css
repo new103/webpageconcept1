@@ -137,6 +137,7 @@ nav {
 	max-width: 50rem;
 	color: #fafafa;
 	transform: translateY(20%);
+	margin-bottom: 5rem;
 }
 
 .main-message h3 {
@@ -313,11 +314,15 @@ footer {
 /* Media Queries */
 @media screen and (min-width: 400px) {
 .main-message {
-	transform: translateY(40%);
+	transform: translateY(22%);
 }
 }
 
 @media screen and (min-width: 480px) {
+	.main-message {
+	transform: translateY(24%);
+}
+
 .hero::after {
 	height: 9.4rem;
 	background: url("images/wave-medium.png");
@@ -331,7 +336,13 @@ footer {
 }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (orientation: landscape) {
+
+	.main-message {
+	transform: translateY(40%);
+}
+
+
 header {
 	height: 8rem;
 }
@@ -403,6 +414,10 @@ header {
 	background: url("images/wave-large-reversed.png");
 	background-size: cover;
 	z-index: 10000;
+}
+
+.hero {
+	height: 70vh;
 }
 }
 
